@@ -1,0 +1,31 @@
+<html>
+<head> 
+  <title>Curency Calculator</title>
+ <style>
+  
+     *{
+     font-size:30px;
+     text-align:center;
+     font-style:italic;
+     text-transform:capitalize;
+     }
+  </style>
+</head>
+<body bgcolor="lightgreen">
+  <script>
+     a=prompt("Enter Your Money:");
+     n=parseInt(a);
+     fi=Math.floor(n/500);
+     n=n-fi*500;
+     h=Math.floor(n/100);
+     n=n-h*100;
+     f=Math.floor(n/50);
+     n=n-f*50;
+     tw=Math.floor(n/20)
+     n=n-tw*20;
+     t=Math.floor(n/10);
+     n=n-t*10;
+     document.write("Five Hundreds="+fi+"<br>Hundreds="+h+"<br>Fifty="+f+"<br>Twenty="+tw+"<br>ten="+t);
+  </script>
+</body>
+</html>
